@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration form</title>
+  </head>
+  <body>
+    <h1>REGISTRATION FORM</h1>
+    <form action="Form.html">
+      <input type="text" placeholder="Your name" required pattern="[a-zA-Z]+" title="Name should contain only letters and it should have atleast one letter"/><br/><br/>
+      <textarea rows="5"cols="30"placeholder="Your Address"></textarea><br/><br/>
+      Gender:
+      Male:<input type="radio" value="male"name="gender"/>
+      Female:<input type="radio" value="female"name="gender"/>
+      Others:<input type="radio" value="others"name="gender"/><br/><br/>
+      University:
+      <select required>
+        <option>Kannur University</option>
+        <option>University of Calicut</option>
+        <option>MG University</option>
+        <option>Kerala University</option>
+      </select>
+      <br/><br/>
+      Programmes:
+      <input type=text list="programmes"/>
+      <datalist id="programmes">
+        <option value="Computer Science"/>
+        <option value="Physics"/>
+        <option value="Chemistry"/>
+        <option value="Mathematics"/>
+        <option value="Statistics"/>
+      </datalist>  
+      <br/><br/>
+      <input type="email" placeholder="Your email address" required/><br/><br/>
+      <input type="password" placeholder="password"/><br/><br/>
+      <input type="password" placeholder=" confirm password"/><br/><br/>
+      Date of birth:<input type="date"/><br/><br/>
+      Languages known:
+      Malayalam:<input type="checkbox" value="mal"/>
+      English:<input type="checkbox" value="eng"/>
+      Hindi:<input type="checkbox" value="hin"/><br/><br/>
+      
+      <input type="submit" value="submit"/><br/><br/>
+   </body>
+   </body>
+</html>
